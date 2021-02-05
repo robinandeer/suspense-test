@@ -1,0 +1,16 @@
+{
+  "name": "suspense-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "next": "^10.0.5",
+    "react": "^0.0.0-experimental-27659559e",
+    "react-dom": "^0.0.0-experimental-27659559e"
+  }
+}
