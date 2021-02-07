@@ -1,72 +1,72 @@
 .container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    padding: 1rem;
+  padding: 1rem;
 
-    width: 100%;
-    max-width: 475px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 475px;
+  margin: 0 auto;
 }
 
 .header {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    right: 2rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    color: #000;
-    font-style: italic;
+  color: #000;
+  font-style: italic;
 }
 
 .header a {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .list {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .listItem {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .listItem > a {
-    font-size: 2rem;
-    color: var(--accent-color);
+  font-size: 2rem;
+  color: var(--accent-color);
 }
 
 .searchContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .searchInputs {
-    display: grid;
-    grid-template-columns: 1fr 8rem;
-    gap: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 8rem;
+  gap: 0.5rem;
 }
 
 .searchInput {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0;
 }
 
 .searchInput:focus,
 .searchButton:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px var(--accent-color-opacity);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accent-color-opacity);
 }
 
 .searchButton {
-    border-radius: 0.5rem;
-    border: 0;
-    background: var(--accent-color);
+  border-radius: 0.5rem;
+  border: 0;
+  background: var(--accent-color);
 }

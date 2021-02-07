@@ -1,7 +1,8 @@
-import { API } from "../utils/api"
-import PokemonInfo from "../components/pokemon-info"
-import PokemonInfoSkeleton from "../components/pokemon-info-skeleton"
-import Container from "../components/container"
+import React from 'react'
+import { API } from '../utils/api'
+import PokemonInfo from '../components/pokemon-info'
+import PokemonInfoSkeleton from '../components/pokemon-info-skeleton'
+import Container from '../components/container'
 
 // assign variable to hold the resolved data
 let pokemon

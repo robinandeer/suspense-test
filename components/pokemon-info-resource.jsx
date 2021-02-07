@@ -1,4 +1,4 @@
-import PokemonInfo from "./pokemon-info"
+import PokemonInfo from './pokemon-info'
 
 export default function PokemonInfoResource({ resource }) {
   const pokemon = resource.read()

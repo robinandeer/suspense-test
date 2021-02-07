@@ -1,8 +1,9 @@
-import { API, createResource } from "../utils/api"
+import React from 'react'
+import { API, createResource } from '../utils/api'
 
-import PokemonInfoResource from "../components/pokemon-info-resource"
-import PokemonInfoSkeleton from "../components/pokemon-info-skeleton"
-import Container from "../components/container"
+import PokemonInfoResource from '../components/pokemon-info-resource'
+import PokemonInfoSkeleton from '../components/pokemon-info-skeleton'
+import Container from '../components/container'
 import styles from '../styles/index.module.css'
 
 const initialResource = createResource(API.fetchPokemon('pikachu'))
@@ -22,7 +23,12 @@ function PokemonSearchComponent() {
     <Container back title="Level 5">
       <div className={styles.searchContainer}>
         <div className={styles.searchInputs}>
-          <input className={styles.searchInput} placeholder="mewtwo" value={pokemonName} onChange={({ target: { value } }) => setPokemonName(value)} />
+          <input
+            className={styles.searchInput}
+            placeholder="mewtwo"
+            value={pokemonName}
+            onChange={({ target: { value } }) => setPokemonName(value)}
+          />
           <button className={styles.searchButton} onClick={handleClick}>
             {isPending ? 'Loading...' : 'Search'}
           </button>

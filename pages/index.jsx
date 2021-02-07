@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Container from "../components/container";
+import Link from 'next/link'
+import Container from '../components/container'
 import styles from '../styles/index.module.css'
 
 export default function IndexPage() {

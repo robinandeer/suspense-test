@@ -1,7 +1,8 @@
-import { API } from "../utils/api"
-import PokemonInfo from "../components/pokemon-info"
-import PokemonInfoSkeleton from "../components/pokemon-info-skeleton"
-import Container from "../components/container"
+import React from 'react'
+import Container from '../components/container'
+import PokemonInfo from '../components/pokemon-info'
+import PokemonInfoSkeleton from '../components/pokemon-info-skeleton'
+import { API } from '../utils/api'
 
 // fire request as early as possible
 const pokemonPromise = API.fetchPokemon('pikachu')
@@ -16,11 +17,7 @@ function PokemonComponent() {
   }, [])
 
   // conditionally render a loading component
-  return pokemon ? (
-    <PokemonInfo pokemon={pokemon} />
-  ) : (
-    <PokemonInfoSkeleton />
-  )
+  return pokemon ? <PokemonInfo pokemon={pokemon} /> : <PokemonInfoSkeleton />
 }
 
 export default function Level1() {

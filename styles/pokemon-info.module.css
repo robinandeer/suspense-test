@@ -1,27 +1,27 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .separator {
-    width: 50%;
-    border-bottom: 2px solid var(--dark-gray);
+  width: 50%;
+  border-bottom: 2px solid var(--dark-gray);
 }
 
 .name {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--accent-color);
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--accent-color);
 }
 
 .skeletonImage {
-    height: 475px;
-    width: 475px;
-    border-radius: calc((475px - 2rem) / 2);
-    margin: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--gray);
+  height: 475px;
+  width: 475px;
+  border-radius: calc((475px - 2rem) / 2);
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
 }

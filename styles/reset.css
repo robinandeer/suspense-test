@@ -35,7 +35,8 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    'Helvetica Neue', sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -79,10 +80,10 @@ select {
 }
 
 :root {
-  --bg-color: #A9A9B0;
-  --accent-color: #FED000;
-  --gray: #98989C;
-  --accent-color-opacity: #FED00080;
+  --bg-color: #a9a9b0;
+  --accent-color: #fed000;
+  --gray: #98989c;
+  --accent-color-opacity: #fed00080;
   --dark-gray: #808088;
 }
 

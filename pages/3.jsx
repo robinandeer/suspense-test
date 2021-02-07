@@ -1,8 +1,8 @@
-import { API, createResource } from "../utils/api"
-
-import PokemonInfo from "../components/pokemon-info"
-import PokemonInfoSkeleton from "../components/pokemon-info-skeleton"
-import Container from "../components/container"
+import React from 'react'
+import { API, createResource } from '../utils/api'
+import PokemonInfo from '../components/pokemon-info'
+import PokemonInfoSkeleton from '../components/pokemon-info-skeleton'
+import Container from '../components/container'
 
 // create a "resource" by passing our pokemon promise
 const pokemonResource = createResource(API.fetchPokemon('pikachu'))
