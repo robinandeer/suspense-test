@@ -2,7 +2,7 @@
 
 This project shows off how you can use React Suspense for data fetching.
 
-> React Suspense for data fetching is still experimental and APIs might changes in the future.
+> ⚠️ React Suspense for data fetching is still experimental and APIs might changes in the future.
 
 ## Installation
 
