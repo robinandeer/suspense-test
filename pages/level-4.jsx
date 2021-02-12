@@ -1,36 +1,34 @@
 import React from 'react'
 import { API, createResource } from '../utils/api'
-
 import PokemonInfoResource from '../components/pokemon-info-resource'
 import PokemonInfoSkeleton from '../components/pokemon-info-skeleton'
 import Container from '../components/container'
-import styles from '../styles/index.module.css'
+import styles from '../styles/search.module.css'
 
 const initialResource = createResource(API.fetchPokemon('pikachu'))
 
 function PokemonSearchComponent() {
-  const [startTransition, isPending] = React.unstable_useTransition()
   const [pokemonResource, setPokemonResource] = React.useState(initialResource)
   const [pokemonName, setPokemonName] = React.useState('')
 
   function handleClick() {
-    startTransition(() => {
+    if (pokemonName) {
       setPokemonResource(createResource(API.fetchPokemon(pokemonName)))
-    })
+    }
   }
 
   return (
-    <Container back title="Level 5">
-      <div className={styles.searchContainer}>
-        <div className={styles.searchInputs}>
+    <Container back title="Level 4">
+      <div className={styles.container}>
+        <div className={styles.inputs}>
           <input
-            className={styles.searchInput}
+            className={styles.input}
             placeholder="mewtwo"
             value={pokemonName}
             onChange={({ target: { value } }) => setPokemonName(value)}
           />
-          <button className={styles.searchButton} onClick={handleClick}>
-            {isPending ? 'Loading...' : 'Search'}
+          <button className={styles.button} onClick={handleClick}>
+            Search
           </button>
         </div>
 
@@ -42,6 +40,6 @@ function PokemonSearchComponent() {
   )
 }
 
-export default function Level5() {
+export default function Level4() {
   return <PokemonSearchComponent />
 }

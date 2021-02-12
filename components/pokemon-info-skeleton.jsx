@@ -1,4 +1,4 @@
-import styles from '../styles/pokemon-info.module.css'
+import styles from './pokemon-info.module.css'
 
 export default function PokemonInfoSkeleton() {
   return (

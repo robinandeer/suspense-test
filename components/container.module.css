@@ -1,0 +1,29 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+
+  width: 100%;
+  max-width: calc(475px + 2rem);
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #000;
+  font-style: italic;
+}
+
+.header a {
+  color: var(--accent-color);
+}

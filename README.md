@@ -25,3 +25,7 @@ yarn dev
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Acknowledgements
+
+- [A Modern CSS Reset](https://dev.to/hankchizljaw/a-modern-css-reset-6p3)
